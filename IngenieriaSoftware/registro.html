@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/registrostyles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <section class="left-part">
+            <form action="php/register.php" method="post">
+                <h1>Formulario de registro</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Cédula" required name="idUsuario">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Nombres" required name="name">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Apellidos" required name="lastName">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Dirección de residencia" required name="address">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Localidad" required name="locality">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Número de celular" required name="phoneNumber">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Correo electrónico" required name="email">
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Contraseña" required name="password">
+                </div>
+                <button type="submit" class="btn-signup">Registrarse</button>
+            </form>
+        </section>
+        <section class="right-part">
+            <h1>Estamos apasionados por el cuidado del medio ambiente</h1>
+            <div class="slide-wrapper">
+                <div class="slider">
+                    <img id="slide1" src="assets/img1slide.jpg">
+                    <img id="slide2" src="assets/img1slide.jpg">
+                    <img id="slide3" src="assets/img1slide.jpg">
+                    <img id="slide4" src="assets/img1slide.jpg">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide1"></a>
+                    <a href="#slide2"></a>
+                    <a href="#slide3"></a>
+                    <a href="#slide4"></a>
+                </div>
+            </div>
+        </section>
+            
+    </div>
+</body>
+</html>

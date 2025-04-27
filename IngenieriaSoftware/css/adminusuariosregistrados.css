@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Colours */
+:root{
+    --body-color: #FFFFFF;
+    --nav-color: #D4E4DA;
+    --side-nav: #010718;
+    --text-color-light: #FFFFFF;
+    --text-color-dark: #122512;
+    --search-bar: #F2F2F2;
+    --search-text: #010718;
+    --action-button-color: #3C5245;
+    --navbar-height: 100px
+}
+
+body{
+    height: 100vh;
+    background-color: var(--body-color);
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background-color: var(--nav-color);
+}
+
+nav .nav-bar{
+    position: relative;
+    height: 100%;
+    max-width: 1000px;
+    width: 100%;
+    background-color: var(--nav-color);
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .nav-bar .logo img{
+    width: 80%;
+    height: 80%;
+}
+
+.nav-bar .nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar .nav-links li{
+    margin: 0 5px;
+    list-style: none;
+}
+
+.nav-links li a{
+    position: relative;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text-color-dark);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-bar .action-button button{
+    position: relative;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: var(--action-button-color);
+    color: var(--text-color-light);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav-bar .action-button button:hover{
+    background-color: #2E3E2F;
+}
+
+main {
+    margin-top: var(--navbar-height); /* Usa la misma altura definida para el navbar */
+    display: flex;
+    justify-content: space-between; /* Espaciado uniforme */
+    align-items: stretch;
+    height: calc(100vh - var(--navbar-height)); /* Ajusta la altura tomando en cuenta el navbar */
+}

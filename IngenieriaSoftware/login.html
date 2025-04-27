@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/loginstyles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <img src="assets/bgHome.jpg" class="background">
+    <div class="container">
+        <section class="left-part">
+            <h1>RECOLECCIÓN</h1>
+            <h2>BASURAS</h2>
+        </section>
+        <section class="right-part">
+            <div class="wrapper">
+                <form action="php/login.php" method="post">
+                    <div class="wrapper-top">
+                        <div class="wrapper-welcome">
+                            <img src="assets/trash-bin_17668000 4.svg">
+                            <h1>¡Bienvenido!</h1>
+                        </div>
+                        <div class="wapper-title">
+                            <h2>Autenticación</h2>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Correo" required name="email">
+                        <i class='bx bxs-user-circle'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Contraseña" required name="password">
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
+    
+                    <button type="submit" class="btn-login">Iniciar sesión</button>
+    
+                    <div class="register-link">
+                        <p>¿No tienes una cuenta creada? <a href="registro.html">Crear una ahora</a></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+            
+    </div>
+</body>
+</html>
